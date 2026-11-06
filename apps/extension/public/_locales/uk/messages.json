@@ -1,0 +1,8 @@
+{
+  "extName": {
+    "message": "QuickTrade.skin"
+  },
+  "extDescription": {
+    "message": "Зв’язує вебзастосунок QuickTrade з майданчиками CS2 (CS.Money, CSFloat, Buff.163)."
+  }
+}

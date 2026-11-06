@@ -1,0 +1,8 @@
+{
+  "extName": {
+    "message": "QuickTrade.skin"
+  },
+  "extDescription": {
+    "message": "Łączy aplikację webową QuickTrade z platformami CS2 (CS.Money, CSFloat, Buff.163)."
+  }
+}

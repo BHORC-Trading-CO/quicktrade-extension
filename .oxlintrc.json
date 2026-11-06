@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nicolo-ribaudo/oxlint-config-schema/refs/heads/main/schema.json",
+  "plugins": ["typescript", "react", "react-hooks", "react-perf", "import", "unicorn", "promise"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn",
+    "style": "off"
+  },
+  "rules": {
+    "no-console": "off",
+    "typescript/no-explicit-any": "warn",
+    "typescript/no-non-null-assertion": "error",
+    "typescript/consistent-type-imports": "warn",
+    "typescript/ban-ts-comment": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/no-cycle": "warn",
+    "import/no-self-import": "error",
+    "promise/no-nesting": "warn",
+    "unicorn/no-instanceof-array": "error",
+    "unicorn/prefer-array-flat-map": "warn",
+    "react/react-in-jsx-scope": "off",
+    "no-await-in-loop": "off",
+    "react-perf/jsx-no-new-function-as-prop": "off",
+    "react-perf/jsx-no-new-object-as-prop": "off",
+    "react-perf/jsx-no-new-array-as-prop": "off",
+    "react-perf/jsx-no-jsx-as-prop": "off",
+    "react/no-array-index-key": "off",
+    "react/jsx-no-constructed-context-values": "off"
+  },
+  "ignorePatterns": [
+    "node_modules",
+    "dist",
+    ".next",
+    ".output",
+    ".wxt",
+    "out",
+    "build",
+    "coverage",
+    "apps/extension/dist",
+    "apps/extension/.output",
+    "apps/web/.next",
+    "apps/server/dist",
+    "apps/server/vendor"
+  ],
+  "overrides": [
+    {
+      "files": ["**/__tests__/**", "**/*.test.ts", "**/*.test.tsx", "**/*.spec.ts"],
+      "rules": {
+        "typescript/no-non-null-assertion": "off",
+        "typescript/no-explicit-any": "off"
+      }
+    }
+  ]
+}

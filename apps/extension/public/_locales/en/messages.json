@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "QuickTrade.skin",
+    "description": "Extension name in the browser and the stores. The product name: the same in every language."
+  },
+  "extDescription": {
+    "message": "Bridge between QuickTrade web app and CS2 marketplaces (CS.Money, CSFloat, Buff.163).",
+    "description": "Extension description in the browser and the stores, at most 132 characters. Marketplace names stay as written."
+  }
+}

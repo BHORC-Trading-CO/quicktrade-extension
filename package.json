@@ -1,0 +1,44 @@
+{
+  "name": "quicktrade-extension-source",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@total-typescript/ts-reset": "^0.6.1",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^9.0.0",
+    "oxlint": "^1.58.0",
+    "prettier": "^3.8.1",
+    "types-spring": "^2.2.8"
+  },
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=10"
+  },
+  "overrides": {
+    "quickjs-emscripten-sync": "1.8.0"
+  },
+  "private": false,
+  "description": "QuickTrade.skin browser extension and shared contracts.",
+  "author": {
+    "name": "QuickTrade.skin",
+    "url": "https://quicktrade.skin"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/BHORC-Trading-CO/quicktrade-extension",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BHORC-Trading-CO/quicktrade-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BHORC-Trading-CO/quicktrade-extension/issues"
+  },
+  "scripts": {
+    "build": "npm run build --workspace=apps/extension",
+    "test": "npm run test --workspace=apps/extension && npm run test --workspace=packages/contracts",
+    "zip": "npm run zip --workspace=apps/extension"
+  },
+  "workspaces": [
+    "apps/extension",
+    "packages/contracts"
+  ]
+}

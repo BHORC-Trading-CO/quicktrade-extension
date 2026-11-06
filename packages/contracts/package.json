@@ -1,0 +1,38 @@
+{
+  "name": "@qts/contracts",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "types": "./src/index.ts",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "private": false,
+  "description": "QuickTrade.skin browser extension and shared contracts.",
+  "author": {
+    "name": "QuickTrade.skin",
+    "url": "https://quicktrade.skin"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/BHORC-Trading-CO/quicktrade-extension",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BHORC-Trading-CO/quicktrade-extension.git",
+    "directory": "packages/contracts"
+  },
+  "bugs": {
+    "url": "https://github.com/BHORC-Trading-CO/quicktrade-extension/issues"
+  },
+  "scripts": {
+    "test": "tsc --noEmit && vitest run --root ../../apps/extension background/__tests__/buy-order-engine-contracts.test.ts background/__tests__/market-buy-contracts.test.ts background/__tests__/steam-operation-allowlist.test.ts background/__tests__/dnr-policy.test.ts background/__tests__/market-feed-budget.test.ts"
+  }
+}

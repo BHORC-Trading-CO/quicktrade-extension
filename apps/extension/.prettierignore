@@ -1,0 +1,8 @@
+# Ignore artifacts:
+
+dist
+src/lib
+src/dev/pages/web_recordings
+node_modules
+cypress
+

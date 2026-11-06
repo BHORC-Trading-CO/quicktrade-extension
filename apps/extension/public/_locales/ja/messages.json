@@ -1,0 +1,8 @@
+{
+  "extName": {
+    "message": "QuickTrade.skin"
+  },
+  "extDescription": {
+    "message": "QuickTradeのWebアプリとCS2マーケット（CS.Money、CSFloat、Buff.163）をつなぐブリッジです。"
+  }
+}
