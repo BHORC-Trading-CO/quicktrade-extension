@@ -1,6 +1,6 @@
 # Contributing
 
-This repository is licensed under the [Apache License 2.0](LICENSE). Unless you state otherwise, any contribution you submit is licensed under the same terms (section 5 of the license). Releases are exported from a private monorepo, so an accepted change is applied there first and appears here with the next exported snapshot.
+This repository is licensed under the [Functional Source License 1.1, Apache 2.0 Future License](LICENSE) (FSL-1.1-ALv2). By submitting a contribution you agree that it is licensed under the same terms, and that BHORC may also release it under the Apache License 2.0. Releases are exported from a private monorepo, so an accepted change is applied there first and appears here with the next exported snapshot.
 
 Use Node 22.17.1 and npm 10.9.2, then run `npm ci` at the repository root. For behavior changes, write a failing test first, make the smallest change that passes it, and run:
 
